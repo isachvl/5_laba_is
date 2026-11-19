@@ -1,0 +1,14 @@
+{
+  "runs": 9,
+  "metric_names": [
+    "success",
+    "mean_input_tokens",
+    "duplicate_writes"
+  ],
+  "metric_points_per_run": 3,
+  "traces": 336,
+  "plots": [
+    "analysis/faults_transfer.png",
+    "analysis/stability.png"
+  ]
+}

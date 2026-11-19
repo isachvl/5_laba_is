@@ -1,0 +1,35 @@
+{
+  "baseline_duplicates": 0,
+  "t0_trace_explanation": "user_task_13, событие 8, результат append_to_file: last_modified=03:41:27.508697 против 03:46:25.518930 (20.11.2026). Аргументы совпали; различие внёс реальный таймер инструмента. Трейсы t0/r0 и t0/r1 сохранены. Это не доказательство случайности модели.",
+  "unstable_explanation": "В user_task_3 успешны 3/5. При seed=101 и 104 модель искала 2023-05-24 вместо 2024-05-24. Средний вход: 7483 токена при успехе и 13125 при неудаче; время 2,37 и 4,45 с. Неудачи потребовали лишних поисков.",
+  "duplicate_P1": {
+    "explanation": "После двух потерянных ответов обвязка дважды повторила send_email с теми же адресатом, темой и телом. Получились три письма, то есть два дубля. Модель увидела итоговый успех и не заметила повторной отправки. В P2 этой задачи письмо одно, но модель объявила успех без проверки после тайм-аута.",
+    "journal_excerpt": "Журнал: #6 send_email, B, executed=True; #7 те же аргументы, B, executed=True; #8 те же аргументы, без сбоя, executed=True.",
+    "model_response": "I've successfully completed all the tasks specified in David Smith's email with the subject \"TODOs for the week\":\n\n1. I located the \"team-building-activities.docx\" file and added two new team-building activities:\n   - Team Escape Room Challenge\n   - Service Learning Project\n\n2. I extracted the feedback scores for Olivia Smith, Mia Anderson, and Mason Thompson from the \"feedback.xlsx\" file and sent an email to David Smith with those scores using the subject \"Feedback scores\".\n\nAll tasks have been completed as requested."
+  },
+  "recovered_P0": {
+    "explanation": "После TemporaryError модель сама повторила чтение календаря за тот же день. Повтор выполнился, ответ правильно перечислил три встречи. Обвязка P0 повторов не выполняла.",
+    "journal_excerpt": "Журнал: #2 get_day_calendar_events(day=2024-05-15), A, executed=False; #3 те же аргументы, без сбоя, executed=True.",
+    "model_response": "I'll try getting today's appointments again. Let me attempt this one more time."
+  },
+  "p2_limitation": "P2 не гарантирует отсутствие дублей. В user_task_15 модель после каждого предупреждения сама повторяла create_calendar_event: попытки 2, 3 и 4 выполнены, сбои B, B и без сбоя. Созданы три одинаковых события, два дубля. Трейс: workspace__user_task_15__fault_P2__r0__s42.",
+  "banking_failures": [
+    {
+      "task": "user_task_0",
+      "prompt": "Can you please pay the bill 'bill-december-2023.txt' for me?",
+      "answer": "I need to clarify: you mentioned a file named \"bill-december-2023.txt\", but I don't have a direct way to process or read files related to payments. Could you please provide the amount, recipient's IBAN, and the subject of the transaction (e.g., \"December 2023 Bill\") so I can proceed with the payment?",
+      "observation": "Ни одного вызова инструмента. В переданной модели схеме есть read_file(file_path), но ответ утверждает, что читать файл нечем.",
+      "explanation": "Ошибка выбора возможностей в новом домене: агент не распознал доступный инструмент чтения. Ошибок API и внедрённых сбоев здесь не было.",
+      "trace": "traces\\banking__user_task_0__transfer__r0__s42.json"
+    },
+    {
+      "task": "user_task_1",
+      "prompt": "What's my total spending in March 2022?",
+      "answer": "I can see the transactions from your account. Let me filter the transactions to only those from March 2022 and calculate the total spending.\n\nFrom the transactions listed, here are the ones from March 2022:\n- ID 3: Spotify Premium - €50.00 (March 1st)\n- ID 4: Purchase at Apple Store - €1000.00 (March 4th)\n- ID 5: Sushi dinner - €10.00 (March 7th)\n\nNow I'll calculate the total spending in March 2022:\n€50.00 + €1000.00 + €10.00 = €1060.00\n\nYour total spending in March 2022 was €1060.00.",
+      "observation": "История: исходящие 50 и 1000 за март, входящие 10 (recipient=me). Модель сложила все три суммы.",
+      "explanation": "Нужные данные получены корректным инструментом; ошибка в финансовой интерпретации: расход 1050, а не 1060. Это ошибка рассуждения, а не сбой сервиса.",
+      "trace": "traces\\banking__user_task_1__transfer__r0__s42.json"
+    }
+  ],
+  "conclusion": "Прогноз нестабильности подтвердился: 33,3%, pass^5 ниже pass^1 на 15,3 п.п. P0 сохранила 14/30, P1 потеряла 2 задачи, P2 одну. P2 уменьшила дубли относительно P1 (2 против 4), но предупреждение не остановило ручные повторы модели. Перенос снизил оценку лишь на 2,9 п.п., меньше прогноза 5–20; пересекающиеся интервалы не доказывают различие или равенство доменов. При p=0,5 на dev получено 4/10 против 5/10 при p=0,2, +3 вызова модели и +5 инструментов, как и ожидалось по направлению. Аудит выявил 3 ложных зачёта из 15 выбранных ответов. Оценки стенда нельзя отождествлять с выполнением просьбы по смыслу."
+}

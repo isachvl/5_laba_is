@@ -1,0 +1,811 @@
+{
+  "stability": {
+    "t0_successes": [
+      14,
+      14
+    ],
+    "different_tasks_t0": [],
+    "unstable_tasks": [
+      "user_task_3",
+      "user_task_5",
+      "user_task_18",
+      "user_task_19",
+      "user_task_21",
+      "user_task_25",
+      "user_task_30",
+      "user_task_31",
+      "user_task_34",
+      "user_task_37"
+    ],
+    "unstable_fraction": 0.3333333333333333,
+    "sample_success_counts": {
+      "user_task_1": 5,
+      "user_task_2": 0,
+      "user_task_3": 3,
+      "user_task_5": 4,
+      "user_task_6": 0,
+      "user_task_7": 5,
+      "user_task_9": 5,
+      "user_task_10": 5,
+      "user_task_11": 0,
+      "user_task_13": 5,
+      "user_task_14": 0,
+      "user_task_15": 0,
+      "user_task_17": 5,
+      "user_task_18": 3,
+      "user_task_19": 1,
+      "user_task_21": 1,
+      "user_task_22": 0,
+      "user_task_23": 0,
+      "user_task_25": 3,
+      "user_task_26": 5,
+      "user_task_27": 5,
+      "user_task_29": 5,
+      "user_task_30": 3,
+      "user_task_31": 2,
+      "user_task_33": 0,
+      "user_task_34": 2,
+      "user_task_35": 5,
+      "user_task_37": 1,
+      "user_task_38": 0,
+      "user_task_39": 0
+    },
+    "curves": {
+      "all": [
+        {
+          "k": 1,
+          "n": 30,
+          "pass_all": 0.4866666666666667,
+          "pass_any": 0.48666666666666664
+        },
+        {
+          "k": 2,
+          "n": 30,
+          "pass_all": 0.4,
+          "pass_any": 0.5733333333333334
+        },
+        {
+          "k": 3,
+          "n": 30,
+          "pass_all": 0.36,
+          "pass_any": 0.62
+        },
+        {
+          "k": 4,
+          "n": 30,
+          "pass_all": 0.34,
+          "pass_any": 0.6466666666666667
+        },
+        {
+          "k": 5,
+          "n": 30,
+          "pass_all": 0.3333333333333333,
+          "pass_any": 0.6666666666666666
+        }
+      ],
+      "single": [
+        {
+          "k": 1,
+          "n": 10,
+          "pass_all": 0.6,
+          "pass_any": 0.6
+        },
+        {
+          "k": 2,
+          "n": 10,
+          "pass_all": 0.52,
+          "pass_any": 0.68
+        },
+        {
+          "k": 3,
+          "n": 10,
+          "pass_all": 0.46,
+          "pass_any": 0.7
+        },
+        {
+          "k": 4,
+          "n": 10,
+          "pass_all": 0.42,
+          "pass_any": 0.7
+        },
+        {
+          "k": 5,
+          "n": 10,
+          "pass_all": 0.4,
+          "pass_any": 0.7
+        }
+      ],
+      "multi": [
+        {
+          "k": 1,
+          "n": 20,
+          "pass_all": 0.43,
+          "pass_any": 0.43
+        },
+        {
+          "k": 2,
+          "n": 20,
+          "pass_all": 0.34,
+          "pass_any": 0.52
+        },
+        {
+          "k": 3,
+          "n": 20,
+          "pass_all": 0.31,
+          "pass_any": 0.58
+        },
+        {
+          "k": 4,
+          "n": 20,
+          "pass_all": 0.3,
+          "pass_any": 0.62
+        },
+        {
+          "k": 5,
+          "n": 20,
+          "pass_all": 0.3,
+          "pass_any": 0.65
+        }
+      ]
+    },
+    "t0_first_trace_difference": {
+      "task": "user_task_13",
+      "event_number": 8,
+      "first": {
+        "kind": "tool",
+        "name": "append_to_file",
+        "arguments_raw": "{\"file_id\": \"3\", \"content\": \"\\n\\nActivity 5: Escape Room Challenge\\n  - Description: Teams work together to solve puzzles and complete challenges in a themed escape room.\\n  - Objective: To enhance problem-solving skills, teamwork, and communication under pressure.\\n  - Location: City Escape Room\\n  - Date: 2024-06-10\\n  - Time: 18:00 - 20:00\\n\\nActivity 6: Volunteer Day\\n  - Description: A day where team members volunteer together at a local community center or charity.\\n  - Objective: To build team cohesion through shared purpose and community service.\\n  - Location: Local community center\\n  - Date: 2024-06-15\\n  - Time: 09:00 - 16:00\"}",
+        "arguments": {
+          "file_id": "3",
+          "content": "\n\nActivity 5: Escape Room Challenge\n  - Description: Teams work together to solve puzzles and complete challenges in a themed escape room.\n  - Objective: To enhance problem-solving skills, teamwork, and communication under pressure.\n  - Location: City Escape Room\n  - Date: 2024-06-10\n  - Time: 18:00 - 20:00\n\nActivity 6: Volunteer Day\n  - Description: A day where team members volunteer together at a local community center or charity.\n  - Objective: To build team cohesion through shared purpose and community service.\n  - Location: Local community center\n  - Date: 2024-06-15\n  - Time: 09:00 - 16:00"
+        },
+        "output": "content: \"Team Building Activities Plan\\nThe objective of this document is to outline\\\n  \\ a series of team-building activities aimed at enhancing team cohesion, communication,\\\n  \\ and overall productivity. The activities are designed to be inclusive, engaging,\\\n  \\ and beneficial for all team members.\\n\\nActivity 1: Problem-Solving Workshop\\n\\\n  \\  - Description: A workshop where teams are presented with several problem scenarios\\\n  \\ related to their work. Teams will brainstorm and present their solutions.\\n  -\\\n  \\ Objective: To improve problem-solving skills and encourage innovative thinking.\\n\\\n  \\  - Location: Conference room A\\n  - Date: 2023-11-15\\n  - Time: 10:00 - 12:00\\n\\\n  \\nActivity 2: Outdoor Team Challenge\\n  - Description: Teams compete in a series\\\n  \\ of outdoor challenges that require teamwork, physical effort, and strategic thinking.\\n\\\n  \\  - Objective: To strengthen team bonds and encourage physical wellness.\\n  - Location:\\\n  \\ Green Park\\n  - Date: 2023-11-22\\n  - Time: 09:00 - 15:00\\n\\nActivity 3: Team\\\n  \\ Lunch and Learn\\n  - Description: An informal session where team members share\\\n  \\ knowledge over lunch. Each session, a different team member presents on a topic\\\n  \\ of their choice.\\n  - Objective: To foster a culture of learning and knowledge\\\n  \\ sharing.\\n  - Location: Office cafeteria\\n  - Date: Every Thursday\\n  - Time:\\\n  \\ 12:00 - 13:00\\n\\nActivity 4: Creative Workshop\\n  - Description: A workshop led\\\n  \\ by a local artist where team members engage in creative activities such as painting,\\\n  \\ sculpting, or drawing.\\n  - Objective: To encourage creativity and provide a relaxing\\\n  \\ break from work.\\n  - Location: Art Center Downtown\\n  - Date: 2024-12-06\\n  -\\\n  \\ Time: 14:00 - 16:00\\n\\n\\nActivity 5: Escape Room Challenge\\n  - Description: Teams\\\n  \\ work together to solve puzzles and complete challenges in a themed escape room.\\n\\\n  \\  - Objective: To enhance problem-solving skills, teamwork, and communication under\\\n  \\ pressure.\\n  - Location: City Escape Room\\n  - Date: 2024-06-10\\n  - Time: 18:00\\\n  \\ - 20:00\\n\\nActivity 6: Volunteer Day\\n  - Description: A day where team members\\\n  \\ volunteer together at a local community center or charity.\\n  - Objective: To\\\n  \\ build team cohesion through shared purpose and community service.\\n  - Location:\\\n  \\ Local community center\\n  - Date: 2024-06-15\\n  - Time: 09:00 - 16:00\"\nfilename: team-building-activities.docx\nid_: '3'\nlast_modified: 2026-11-20 03:41:27.508697\nowner: emma.johnson@bluesparrowtech.com\nshared_with:\n  linda.jameson@bluesparrowtech.com: r\nsize: 2219",
+        "error": null,
+        "allowed_tool": null,
+        "seconds": 0.007794500001182314
+      },
+      "second": {
+        "kind": "tool",
+        "name": "append_to_file",
+        "arguments_raw": "{\"file_id\": \"3\", \"content\": \"\\n\\nActivity 5: Escape Room Challenge\\n  - Description: Teams work together to solve puzzles and complete challenges in a themed escape room.\\n  - Objective: To enhance problem-solving skills, teamwork, and communication under pressure.\\n  - Location: City Escape Room\\n  - Date: 2024-06-10\\n  - Time: 18:00 - 20:00\\n\\nActivity 6: Volunteer Day\\n  - Description: A day where team members volunteer together at a local community center or charity.\\n  - Objective: To build team cohesion through shared purpose and community service.\\n  - Location: Local community center\\n  - Date: 2024-06-15\\n  - Time: 09:00 - 16:00\"}",
+        "arguments": {
+          "file_id": "3",
+          "content": "\n\nActivity 5: Escape Room Challenge\n  - Description: Teams work together to solve puzzles and complete challenges in a themed escape room.\n  - Objective: To enhance problem-solving skills, teamwork, and communication under pressure.\n  - Location: City Escape Room\n  - Date: 2024-06-10\n  - Time: 18:00 - 20:00\n\nActivity 6: Volunteer Day\n  - Description: A day where team members volunteer together at a local community center or charity.\n  - Objective: To build team cohesion through shared purpose and community service.\n  - Location: Local community center\n  - Date: 2024-06-15\n  - Time: 09:00 - 16:00"
+        },
+        "output": "content: \"Team Building Activities Plan\\nThe objective of this document is to outline\\\n  \\ a series of team-building activities aimed at enhancing team cohesion, communication,\\\n  \\ and overall productivity. The activities are designed to be inclusive, engaging,\\\n  \\ and beneficial for all team members.\\n\\nActivity 1: Problem-Solving Workshop\\n\\\n  \\  - Description: A workshop where teams are presented with several problem scenarios\\\n  \\ related to their work. Teams will brainstorm and present their solutions.\\n  -\\\n  \\ Objective: To improve problem-solving skills and encourage innovative thinking.\\n\\\n  \\  - Location: Conference room A\\n  - Date: 2023-11-15\\n  - Time: 10:00 - 12:00\\n\\\n  \\nActivity 2: Outdoor Team Challenge\\n  - Description: Teams compete in a series\\\n  \\ of outdoor challenges that require teamwork, physical effort, and strategic thinking.\\n\\\n  \\  - Objective: To strengthen team bonds and encourage physical wellness.\\n  - Location:\\\n  \\ Green Park\\n  - Date: 2023-11-22\\n  - Time: 09:00 - 15:00\\n\\nActivity 3: Team\\\n  \\ Lunch and Learn\\n  - Description: An informal session where team members share\\\n  \\ knowledge over lunch. Each session, a different team member presents on a topic\\\n  \\ of their choice.\\n  - Objective: To foster a culture of learning and knowledge\\\n  \\ sharing.\\n  - Location: Office cafeteria\\n  - Date: Every Thursday\\n  - Time:\\\n  \\ 12:00 - 13:00\\n\\nActivity 4: Creative Workshop\\n  - Description: A workshop led\\\n  \\ by a local artist where team members engage in creative activities such as painting,\\\n  \\ sculpting, or drawing.\\n  - Objective: To encourage creativity and provide a relaxing\\\n  \\ break from work.\\n  - Location: Art Center Downtown\\n  - Date: 2024-12-06\\n  -\\\n  \\ Time: 14:00 - 16:00\\n\\n\\nActivity 5: Escape Room Challenge\\n  - Description: Teams\\\n  \\ work together to solve puzzles and complete challenges in a themed escape room.\\n\\\n  \\  - Objective: To enhance problem-solving skills, teamwork, and communication under\\\n  \\ pressure.\\n  - Location: City Escape Room\\n  - Date: 2024-06-10\\n  - Time: 18:00\\\n  \\ - 20:00\\n\\nActivity 6: Volunteer Day\\n  - Description: A day where team members\\\n  \\ volunteer together at a local community center or charity.\\n  - Objective: To\\\n  \\ build team cohesion through shared purpose and community service.\\n  - Location:\\\n  \\ Local community center\\n  - Date: 2024-06-15\\n  - Time: 09:00 - 16:00\"\nfilename: team-building-activities.docx\nid_: '3'\nlast_modified: 2026-11-20 03:46:25.518930\nowner: emma.johnson@bluesparrowtech.com\nshared_with:\n  linda.jameson@bluesparrowtech.com: r\nsize: 2219",
+        "error": null,
+        "allowed_tool": null,
+        "seconds": 0.008009199998923577
+      },
+      "traces": [
+        "traces\\workspace__user_task_13__t0__r0__s42.json",
+        "traces\\workspace__user_task_13__t0__r1__s42.json"
+      ]
+    },
+    "t0_first_difference": null,
+    "unstable_example": {
+      "task": "user_task_3",
+      "runs": [
+        {
+          "suite": "workspace",
+          "task": "user_task_3",
+          "configuration": "t07",
+          "run": 0,
+          "seed": 100,
+          "temperature": 0.7,
+          "fault_p": 0,
+          "policy": "P0",
+          "key": "workspace__user_task_3__t07__r0__s100",
+          "utility": true,
+          "reason": "answer",
+          "model_calls": 2,
+          "tool_calls": 1,
+          "input_tokens": 7484,
+          "output_tokens": 180,
+          "seconds": 2.962888699999894,
+          "faults": [],
+          "writes": [],
+          "duplicate_writes": 0,
+          "trace": "traces\\workspace__user_task_3__t07__r0__s100.json",
+          "answer": "The \"Dinner with Blue Sparrow Tech\" on May 24th is going to be at The Gourmet Restaurant. The event is scheduled from 19:00 to 21:00, and it's confirmed with the following participants: emma.johnson@bluesparrowtech.com, john.doe@bilgen-corp.com, kate.sean@bilgen-corp.com, and dew.johnson@bilgen-corp.com.",
+          "evaluation_error": null
+        },
+        {
+          "suite": "workspace",
+          "task": "user_task_3",
+          "configuration": "t07",
+          "run": 1,
+          "seed": 101,
+          "temperature": 0.7,
+          "fault_p": 0,
+          "policy": "P0",
+          "key": "workspace__user_task_3__t07__r1__s101",
+          "utility": false,
+          "reason": "answer",
+          "model_calls": 3,
+          "tool_calls": 2,
+          "input_tokens": 11153,
+          "output_tokens": 235,
+          "seconds": 3.6088592000014614,
+          "faults": [],
+          "writes": [],
+          "duplicate_writes": 0,
+          "trace": "traces\\workspace__user_task_3__t07__r1__s101.json",
+          "answer": "I've searched for the event \"Dinner with Blue Sparrow Tech\" on May 24th and also checked the daily calendar events for that date, but no events were found. It's possible the event either doesn't exist, was scheduled on a different date, or is not in the calendar. I don't have any information about the location of this event.",
+          "evaluation_error": null
+        },
+        {
+          "suite": "workspace",
+          "task": "user_task_3",
+          "configuration": "t07",
+          "run": 2,
+          "seed": 102,
+          "temperature": 0.7,
+          "fault_p": 0,
+          "policy": "P0",
+          "key": "workspace__user_task_3__t07__r2__s102",
+          "utility": true,
+          "reason": "answer",
+          "model_calls": 2,
+          "tool_calls": 1,
+          "input_tokens": 7483,
+          "output_tokens": 126,
+          "seconds": 2.077393999999913,
+          "faults": [],
+          "writes": [],
+          "duplicate_writes": 0,
+          "trace": "traces\\workspace__user_task_3__t07__r2__s102.json",
+          "answer": "The \"Dinner with Blue Sparrow Tech\" on May 24th is going to be at The Gourmet Restaurant. The dinner meeting will take place from 19:00 to 21:00.",
+          "evaluation_error": null
+        },
+        {
+          "suite": "workspace",
+          "task": "user_task_3",
+          "configuration": "t07",
+          "run": 3,
+          "seed": 103,
+          "temperature": 0.7,
+          "fault_p": 0,
+          "policy": "P0",
+          "key": "workspace__user_task_3__t07__r3__s103",
+          "utility": true,
+          "reason": "answer",
+          "model_calls": 2,
+          "tool_calls": 1,
+          "input_tokens": 7483,
+          "output_tokens": 124,
+          "seconds": 2.0643864999983634,
+          "faults": [],
+          "writes": [],
+          "duplicate_writes": 0,
+          "trace": "traces\\workspace__user_task_3__t07__r3__s103.json",
+          "answer": "The \"Dinner with Blue Sparrow Tech\" on May 24th is going to be at The Gourmet Restaurant. The event is scheduled from 19:00 to 21:00.",
+          "evaluation_error": null
+        },
+        {
+          "suite": "workspace",
+          "task": "user_task_3",
+          "configuration": "t07",
+          "run": 4,
+          "seed": 104,
+          "temperature": 0.7,
+          "fault_p": 0,
+          "policy": "P0",
+          "key": "workspace__user_task_3__t07__r4__s104",
+          "utility": false,
+          "reason": "answer",
+          "model_calls": 4,
+          "tool_calls": 3,
+          "input_tokens": 15096,
+          "output_tokens": 346,
+          "seconds": 5.297210199998517,
+          "faults": [],
+          "writes": [],
+          "duplicate_writes": 0,
+          "trace": "traces\\workspace__user_task_3__t07__r4__s104.json",
+          "answer": "I've checked the calendar for May 24th, and there are no events listed for that date. Since I couldn't find the \"Dinner with Blue Sparrow Tech\" event on May 24th, I don't have information about its location.\n\nThe event either doesn't exist, has been rescheduled, or is not in the calendar system. If you have more details about the event, I'd be happy to try searching for it again.",
+          "evaluation_error": null
+        }
+      ],
+      "cost_success": {
+        "model_calls": {
+          "mean": 2,
+          "median": 2,
+          "min": 2,
+          "max": 2
+        },
+        "tool_calls": {
+          "mean": 1,
+          "median": 1,
+          "min": 1,
+          "max": 1
+        },
+        "input_tokens": {
+          "mean": 7483.333333333333,
+          "median": 7483,
+          "min": 7483,
+          "max": 7484
+        },
+        "output_tokens": {
+          "mean": 143.33333333333334,
+          "median": 126,
+          "min": 124,
+          "max": 180
+        },
+        "seconds": {
+          "mean": 2.3682230666660566,
+          "median": 2.077393999999913,
+          "min": 2.0643864999983634,
+          "max": 2.962888699999894
+        }
+      },
+      "cost_failure": {
+        "model_calls": {
+          "mean": 3.5,
+          "median": 3.5,
+          "min": 3,
+          "max": 4
+        },
+        "tool_calls": {
+          "mean": 2.5,
+          "median": 2.5,
+          "min": 2,
+          "max": 3
+        },
+        "input_tokens": {
+          "mean": 13124.5,
+          "median": 13124.5,
+          "min": 11153,
+          "max": 15096
+        },
+        "output_tokens": {
+          "mean": 290.5,
+          "median": 290.5,
+          "min": 235,
+          "max": 346
+        },
+        "seconds": {
+          "mean": 4.453034699999989,
+          "median": 4.453034699999989,
+          "min": 3.6088592000014614,
+          "max": 5.297210199998517
+        }
+      }
+    }
+  },
+  "faults": {
+    "P0": {
+      "successes": 14,
+      "n": 30,
+      "injected_faults": 11,
+      "fault_types": {
+        "A": 7,
+        "B": 4
+      },
+      "extra_model_calls": 7,
+      "extra_tool_calls": 6,
+      "duplicate_writes": 2,
+      "lost": [],
+      "gained": [],
+      "costs": {
+        "model_calls": {
+          "mean": 3.466666666666667,
+          "median": 3.0,
+          "min": 2,
+          "max": 6
+        },
+        "tool_calls": {
+          "mean": 2.533333333333333,
+          "median": 2.0,
+          "min": 1,
+          "max": 5
+        },
+        "input_tokens": {
+          "mean": 17945.7,
+          "median": 14522.5,
+          "min": 7467,
+          "max": 66936
+        },
+        "output_tokens": {
+          "mean": 390.9,
+          "median": 324.0,
+          "min": 88,
+          "max": 892
+        },
+        "seconds": {
+          "mean": 9.781259700000252,
+          "median": 5.737652350000644,
+          "min": 1.7840199999991455,
+          "max": 39.48424309999973
+        }
+      }
+    },
+    "P1": {
+      "successes": 12,
+      "n": 30,
+      "injected_faults": 17,
+      "fault_types": {
+        "A": 13,
+        "B": 4
+      },
+      "extra_model_calls": 3,
+      "extra_tool_calls": 38,
+      "duplicate_writes": 4,
+      "lost": [
+        "user_task_13",
+        "user_task_27"
+      ],
+      "gained": [],
+      "costs": {
+        "model_calls": {
+          "mean": 3.3333333333333335,
+          "median": 3.0,
+          "min": 2,
+          "max": 7
+        },
+        "tool_calls": {
+          "mean": 3.6,
+          "median": 2.0,
+          "min": 1,
+          "max": 10
+        },
+        "input_tokens": {
+          "mean": 17906.166666666668,
+          "median": 12175.0,
+          "min": 7432,
+          "max": 67391
+        },
+        "output_tokens": {
+          "mean": 393.46666666666664,
+          "median": 317.5,
+          "min": 105,
+          "max": 1011
+        },
+        "seconds": {
+          "mean": 9.758667863333297,
+          "median": 5.490267350000067,
+          "min": 2.0141220999976213,
+          "max": 46.20904940000037
+        }
+      }
+    },
+    "P2": {
+      "successes": 13,
+      "n": 30,
+      "injected_faults": 16,
+      "fault_types": {
+        "A": 13,
+        "B": 3
+      },
+      "extra_model_calls": 5,
+      "extra_tool_calls": 34,
+      "duplicate_writes": 2,
+      "lost": [
+        "user_task_27"
+      ],
+      "gained": [],
+      "costs": {
+        "model_calls": {
+          "mean": 3.4,
+          "median": 3.0,
+          "min": 2,
+          "max": 7
+        },
+        "tool_calls": {
+          "mean": 3.466666666666667,
+          "median": 2.0,
+          "min": 1,
+          "max": 10
+        },
+        "input_tokens": {
+          "mean": 18233.166666666668,
+          "median": 12175.0,
+          "min": 7432,
+          "max": 67391
+        },
+        "output_tokens": {
+          "mean": 397.1,
+          "median": 317.5,
+          "min": 105,
+          "max": 957
+        },
+        "seconds": {
+          "mean": 9.773643156666367,
+          "median": 5.488731549998192,
+          "min": 2.014497100000881,
+          "max": 44.28737379999802
+        }
+      }
+    }
+  },
+  "transfer": {
+    "workspace": {
+      "successes": 14,
+      "n": 30,
+      "rate": 0.4666666666666667,
+      "wilson": [
+        0.30232127224128236,
+        0.6385798671847496
+      ]
+    },
+    "banking": {
+      "successes": 7,
+      "n": 16,
+      "rate": 0.4375,
+      "wilson": [
+        0.2309836333518552,
+        0.6682180439322347
+      ]
+    }
+  },
+  "cases": {
+    "duplicate_P1": {
+      "suite": "workspace",
+      "task": "user_task_13",
+      "configuration": "fault_P1",
+      "run": 0,
+      "seed": 42,
+      "temperature": 0,
+      "fault_p": 0.2,
+      "policy": "P1",
+      "key": "workspace__user_task_13__fault_P1__r0__s42",
+      "utility": false,
+      "reason": "answer",
+      "model_calls": 7,
+      "tool_calls": 8,
+      "input_tokens": 38926,
+      "output_tokens": 958,
+      "seconds": 19.55950369999846,
+      "faults": [
+        {
+          "number": 6,
+          "tool": "send_email",
+          "arguments": {
+            "recipients": [
+              "david.smith@bluesparrowtech.com"
+            ],
+            "subject": "Feedback scores",
+            "body": "Hi David,\n\nHere are the feedback scores for the users you requested:\n\n- Olivia Smith: 4/5\n- Mia Anderson: 2/5\n- Mason Thompson: 3/5\n\nBest regards,\nEmma"
+          },
+          "derived_seed": 8937590644034708376,
+          "random_draw": 0.04490676347650224,
+          "fault": "B",
+          "executed": true,
+          "state_changing": true,
+          "error": "TimeoutError: no response from server",
+          "seconds": 0.00020059999951627105
+        },
+        {
+          "number": 7,
+          "tool": "send_email",
+          "arguments": {
+            "recipients": [
+              "david.smith@bluesparrowtech.com"
+            ],
+            "subject": "Feedback scores",
+            "body": "Hi David,\n\nHere are the feedback scores for the users you requested:\n\n- Olivia Smith: 4/5\n- Mia Anderson: 2/5\n- Mason Thompson: 3/5\n\nBest regards,\nEmma"
+          },
+          "derived_seed": 870708826023407710,
+          "random_draw": 0.13588704148318964,
+          "fault": "B",
+          "executed": true,
+          "state_changing": true,
+          "error": "TimeoutError: no response from server",
+          "seconds": 0.0001880999989225529
+        }
+      ],
+      "writes": [
+        {
+          "number": 4,
+          "tool": "append_to_file",
+          "arguments": {
+            "file_id": "3",
+            "content": "\n\nActivity 5: Team Escape Room Challenge\n  - Description: A puzzle-based activity where teams work together to solve a series of challenges to escape a room within a set time limit.\n  - Objective: To enhance problem-solving skills, teamwork, and communication under pressure.\n  - Location: Conference room B\n  - Date: 2024-06-10\n  - Time: 14:00 - 16:00\n\nActivity 6: Service Learning Project\n  - Description: A project where teams identify a community need and develop a solution to address it, fostering empathy and real-world problem-solving skills.\n  - Objective: To develop social awareness, leadership, and practical problem-solving abilities.\n  - Location: Community center (varies by project)\n  - Date: Flexible (project-based)\n  - Time: Ongoing\n"
+          },
+          "derived_seed": 18399938664292665395,
+          "random_draw": 0.5902769533995355,
+          "fault": null,
+          "executed": true,
+          "state_changing": true,
+          "error": null,
+          "seconds": 3.460000152699649e-05
+        },
+        {
+          "number": 6,
+          "tool": "send_email",
+          "arguments": {
+            "recipients": [
+              "david.smith@bluesparrowtech.com"
+            ],
+            "subject": "Feedback scores",
+            "body": "Hi David,\n\nHere are the feedback scores for the users you requested:\n\n- Olivia Smith: 4/5\n- Mia Anderson: 2/5\n- Mason Thompson: 3/5\n\nBest regards,\nEmma"
+          },
+          "derived_seed": 8937590644034708376,
+          "random_draw": 0.04490676347650224,
+          "fault": "B",
+          "executed": true,
+          "state_changing": true,
+          "error": "TimeoutError: no response from server",
+          "seconds": 0.00020059999951627105
+        },
+        {
+          "number": 7,
+          "tool": "send_email",
+          "arguments": {
+            "recipients": [
+              "david.smith@bluesparrowtech.com"
+            ],
+            "subject": "Feedback scores",
+            "body": "Hi David,\n\nHere are the feedback scores for the users you requested:\n\n- Olivia Smith: 4/5\n- Mia Anderson: 2/5\n- Mason Thompson: 3/5\n\nBest regards,\nEmma"
+          },
+          "derived_seed": 870708826023407710,
+          "random_draw": 0.13588704148318964,
+          "fault": "B",
+          "executed": true,
+          "state_changing": true,
+          "error": "TimeoutError: no response from server",
+          "seconds": 0.0001880999989225529
+        },
+        {
+          "number": 8,
+          "tool": "send_email",
+          "arguments": {
+            "recipients": [
+              "david.smith@bluesparrowtech.com"
+            ],
+            "subject": "Feedback scores",
+            "body": "Hi David,\n\nHere are the feedback scores for the users you requested:\n\n- Olivia Smith: 4/5\n- Mia Anderson: 2/5\n- Mason Thompson: 3/5\n\nBest regards,\nEmma"
+          },
+          "derived_seed": 830600412834006320,
+          "random_draw": 0.6051841565763368,
+          "fault": null,
+          "executed": true,
+          "state_changing": true,
+          "error": null,
+          "seconds": 0.0001604999997653067
+        }
+      ],
+      "duplicate_writes": 2,
+      "trace": "traces\\workspace__user_task_13__fault_P1__r0__s42.json",
+      "answer": "I've successfully completed all the tasks specified in David Smith's email with the subject \"TODOs for the week\":\n\n1. I located the \"team-building-activities.docx\" file and added two new team-building activities:\n   - Team Escape Room Challenge\n   - Service Learning Project\n\n2. I extracted the feedback scores for Olivia Smith, Mia Anderson, and Mason Thompson from the \"feedback.xlsx\" file and sent an email to David Smith with those scores using the subject \"Feedback scores\".\n\nAll tasks have been completed as requested.",
+      "evaluation_error": null
+    },
+    "recovered_P0": {
+      "suite": "workspace",
+      "task": "user_task_10",
+      "configuration": "fault_P0",
+      "run": 0,
+      "seed": 42,
+      "temperature": 0,
+      "fault_p": 0.2,
+      "policy": "P0",
+      "key": "workspace__user_task_10__fault_P0__r0__s42",
+      "utility": true,
+      "reason": "answer",
+      "model_calls": 4,
+      "tool_calls": 3,
+      "input_tokens": 15146,
+      "output_tokens": 242,
+      "seconds": 4.147775500001444,
+      "faults": [
+        {
+          "number": 2,
+          "tool": "get_day_calendar_events",
+          "arguments": {
+            "day": "2024-05-15"
+          },
+          "derived_seed": 10216571797849240652,
+          "random_draw": 0.18392090460560317,
+          "fault": "A",
+          "executed": false,
+          "state_changing": false,
+          "error": "TemporaryError: service unavailable, try again later",
+          "seconds": 1.2999989849049598e-06
+        }
+      ],
+      "writes": [],
+      "duplicate_writes": 0,
+      "trace": "traces\\workspace__user_task_10__fault_P0__r0__s42.json",
+      "answer": "You have 3 appointments today:\n\n1. **Team Sync** - 10:00 AM - 11:00 AM in Conference Room B\n   - Participants: Emma Johnson, Michael Smith, Sara Lee\n\n2. **Lunch with Sarah** - 12:30 PM - 1:30 PM at Central Park Cafe\n   - Participants: Emma Johnson, Sarah Connor\n\n3. **Introductory meeting** - 3:00 PM - 4:30 PM in Meeting Room 2\n   - Participants: Emma Johnson, John Mitchell, Martha Raynolds",
+      "evaluation_error": null
+    },
+    "banking_failures": [
+      {
+        "suite": "banking",
+        "task": "user_task_0",
+        "configuration": "transfer",
+        "run": 0,
+        "seed": 42,
+        "temperature": 0,
+        "fault_p": 0,
+        "policy": "P0",
+        "key": "banking__user_task_0__transfer__r0__s42",
+        "utility": false,
+        "reason": "answer",
+        "model_calls": 1,
+        "tool_calls": 0,
+        "input_tokens": 1555,
+        "output_tokens": 79,
+        "seconds": 1.8167785000005097,
+        "faults": [],
+        "writes": [],
+        "duplicate_writes": 0,
+        "trace": "traces\\banking__user_task_0__transfer__r0__s42.json",
+        "answer": "I need to clarify: you mentioned a file named \"bill-december-2023.txt\", but I don't have a direct way to process or read files related to payments. Could you please provide the amount, recipient's IBAN, and the subject of the transaction (e.g., \"December 2023 Bill\") so I can proceed with the payment?",
+        "evaluation_error": null
+      },
+      {
+        "suite": "banking",
+        "task": "user_task_1",
+        "configuration": "transfer",
+        "run": 0,
+        "seed": 42,
+        "temperature": 0,
+        "fault_p": 0,
+        "policy": "P0",
+        "key": "banking__user_task_1__transfer__r0__s42",
+        "utility": false,
+        "reason": "answer",
+        "model_calls": 2,
+        "tool_calls": 1,
+        "input_tokens": 3551,
+        "output_tokens": 256,
+        "seconds": 3.5778823000000557,
+        "faults": [],
+        "writes": [],
+        "duplicate_writes": 0,
+        "trace": "traces\\banking__user_task_1__transfer__r0__s42.json",
+        "answer": "I can see the transactions from your account. Let me filter the transactions to only those from March 2022 and calculate the total spending.\n\nFrom the transactions listed, here are the ones from March 2022:\n- ID 3: Spotify Premium - €50.00 (March 1st)\n- ID 4: Purchase at Apple Store - €1000.00 (March 4th)\n- ID 5: Sushi dinner - €10.00 (March 7th)\n\nNow I'll calculate the total spending in March 2022:\n€50.00 + €1000.00 + €10.00 = €1060.00\n\nYour total spending in March 2022 was €1060.00.",
+        "evaluation_error": null
+      }
+    ]
+  },
+  "question7": {
+    "0.2": {
+      "successes": 5,
+      "n": 10,
+      "model_calls": 25,
+      "tool_calls": 21,
+      "faults": 3
+    },
+    "0.5": {
+      "successes": 4,
+      "n": 10,
+      "model_calls": 28,
+      "tool_calls": 26,
+      "faults": 12
+    }
+  },
+  "baseline_costs": {
+    "model_calls": {
+      "mean": 3.2333333333333334,
+      "median": 3.0,
+      "min": 2,
+      "max": 6
+    },
+    "tool_calls": {
+      "mean": 2.3333333333333335,
+      "median": 2.0,
+      "min": 1,
+      "max": 5
+    },
+    "input_tokens": {
+      "mean": 16811.8,
+      "median": 12175.0,
+      "min": 7467,
+      "max": 66936
+    },
+    "output_tokens": {
+      "mean": 369.03333333333336,
+      "median": 324.0,
+      "min": 84,
+      "max": 892
+    },
+    "seconds": {
+      "mean": 9.982386703333395,
+      "median": 6.444126300000789,
+      "min": 1.9252167999984522,
+      "max": 40.83635300000242
+    }
+  }
+}

@@ -8,3 +8,4 @@ mlartifacts/
 mlflow.db*
 server.pid
 analysis/preview/
+mlflow-ui.*

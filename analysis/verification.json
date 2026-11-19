@@ -1,0 +1,12 @@
+{
+  "episodes": 336,
+  "main_episodes": 316,
+  "debug_episodes": 20,
+  "model_calls": 1075,
+  "max_tools": 10,
+  "duplicates_in_keys": false,
+  "reasons": {
+    "answer": 325,
+    "context_limit": 11
+  }
+}
