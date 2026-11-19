@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+models/
+bin/
+downloads/
+mlruns/
+mlartifacts/
+mlflow.db*
+server.pid
+analysis/preview/

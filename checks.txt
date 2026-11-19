@@ -1,0 +1,10 @@
+test_lost_response_duplicates (test_faults.Checks.test_lost_response_duplicates) ... ok
+test_one_guaranteed_error_then_recovery (test_faults.Checks.test_one_guaranteed_error_then_recovery) ... ok
+test_permanent_error (test_faults.Checks.test_permanent_error) ... ok
+test_same_schedule (test_faults.Checks.test_same_schedule) ... ok
+test_zero_fault_matches_lr4 (test_faults.Checks.test_zero_fault_matches_lr4) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 5.510s
+
+OK
