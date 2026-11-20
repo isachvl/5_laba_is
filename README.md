@@ -5,6 +5,8 @@
 В Windows PowerShell с Python 3.12:
 
 ```powershell
+git clone https://github.com/isachvl/5_laba_is.git
+cd 5_laba_is
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-demo.txt
 .\.venv\Scripts\python.exe prepare_laptop.py
